@@ -1,14 +1,14 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors">
+    <section id="contact" className="py-20 bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Get In Touch
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-xl text-gray-300">
               Ready to start your next project? We&apos;d love to hear from you.
             </p>
           </div>
@@ -16,7 +16,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              <h3 className="text-2xl font-bold text-white mb-8">
                 Contact Information
               </h3>
 
@@ -28,9 +28,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">contact@ryudev.com</p>
-                    <p className="text-gray-600">support@ryudev.com</p>
+                    <h4 className="text-lg font-semibold text-white mb-1">Email</h4>
+                    <p className="text-gray-300">contact@ryudev.com</p>
+                    <p className="text-gray-300">support@ryudev.com</p>
                   </div>
                 </div>
 
@@ -41,9 +41,9 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">+1 (555) 987-6543</p>
+                    <h4 className="text-lg font-semibold text-white mb-1">Phone</h4>
+                    <p className="text-gray-300">+1 (555) 123-4567</p>
+                    <p className="text-gray-300">+1 (555) 987-6543</p>
                   </div>
                 </div>
 
@@ -55,16 +55,16 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-1">Office</h4>
-                    <p className="text-gray-600">123 Tech Street</p>
-                    <p className="text-gray-600">San Francisco, CA 94105</p>
+                    <h4 className="text-lg font-semibold text-white mb-1">Office</h4>
+                    <p className="text-gray-300">123 Tech Street</p>
+                    <p className="text-gray-300">San Francisco, CA 94105</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Business Hours</h4>
-                <div className="text-gray-600 space-y-1">
+                <h4 className="text-lg font-semibold text-white mb-4">Business Hours</h4>
+                <div className="text-gray-300 space-y-1">
                   <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                   <p>Saturday: 10:00 AM - 4:00 PM</p>
                   <p>Sunday: Closed</p>
@@ -73,8 +73,8 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <div className="bg-gray-700 rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-white mb-6">
                 Send us a Message
               </h3>
 
@@ -88,7 +88,7 @@ export default function Contact() {
                       type="text"
                       id="firstName"
                       name="firstName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                       placeholder="John"
                     />
                   </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                       type="text"
                       id="lastName"
                       name="lastName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                       placeholder="Doe"
                     />
                   </div>
@@ -114,7 +114,7 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                   <select
                     id="service"
                     name="service"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                   >
                     <option value="">Select a service</option>
                     <option value="api-testing">API Testing</option>
@@ -145,7 +145,7 @@ export default function Contact() {
                     id="message"
                     name="message"
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-vertical"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-vertical"
                     placeholder="Tell us about your project requirements..."
                   ></textarea>
                 </div>

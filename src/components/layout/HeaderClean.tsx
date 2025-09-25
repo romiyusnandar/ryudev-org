@@ -14,12 +14,12 @@ export default function HeaderClean() {
   ];
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50 border-b border-gray-100">
+    <header className="bg-gray-900/95 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50 border-b border-gray-700">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
+            <Link href="/" className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
               RyuDev
             </Link>
           </div>
@@ -30,14 +30,14 @@ export default function HeaderClean() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="text-gray-300 hover:text-blue-400 transition-colors font-medium"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="#contact"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium shadow-md hover:shadow-lg"
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500 transition-colors font-medium shadow-md hover:shadow-lg"
             >
               Get Started
             </Link>
@@ -47,7 +47,7 @@ export default function HeaderClean() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
+              className="text-gray-300 hover:text-blue-400 transition-colors"
             >
               <svg
                 className="h-6 w-6"
@@ -70,12 +70,12 @@ export default function HeaderClean() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-100 pt-4">
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-700 pt-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                className="block py-2 text-gray-300 hover:text-blue-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
@@ -83,7 +83,7 @@ export default function HeaderClean() {
             ))}
             <Link
               href="#contact"
-              className="block mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors text-center shadow-md"
+              className="block mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500 transition-colors text-center shadow-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Started

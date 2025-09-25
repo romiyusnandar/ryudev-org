@@ -48,14 +48,14 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white dark:bg-gray-900 transition-colors">
+    <section id="services" className="py-20 bg-gray-800">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             We provide comprehensive digital solutions to help your business thrive in the modern world.
           </p>
         </div>
@@ -65,20 +65,20 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="group p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:shadow-xl hover:-translate-y-1"
+              className="group p-8 rounded-2xl bg-gray-700/60 hover:bg-gray-700 transition-all duration-300 border border-gray-600 hover:shadow-xl hover:-translate-y-1"
             >
               <div className="flex items-start mb-6">
-                <div className="p-3 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                <div className="p-3 rounded-xl bg-blue-600/20 text-blue-400 mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                   {service.icon}
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-2xl font-bold text-white mb-2">
                     {service.title}
                   </h3>
                 </div>
               </div>
 
-              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-300 mb-6 leading-relaxed">
                 {service.description}
               </p>
 
@@ -86,8 +86,8 @@ export default function Services() {
               <div className="mb-6">
                 <ul className="grid grid-cols-2 gap-2">
                   {service.features.map((feature, index) => (
-                    <li key={index} className="flex items-center text-gray-700 dark:text-gray-300">
-                      <svg className="w-4 h-4 mr-2 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <li key={index} className="flex items-center text-gray-300">
+                      <svg className="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-sm">{feature}</span>
@@ -97,7 +97,7 @@ export default function Services() {
               </div>
 
               {/* CTA Button */}
-              <button className="w-full bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors">
+              <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-500 transition-colors">
                 Learn More
               </button>
             </div>
@@ -106,10 +106,10 @@ export default function Services() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+          <p className="text-lg text-gray-300 mb-6">
             Need a custom solution? We&apos;d love to discuss your specific requirements.
           </p>
-          <button className="bg-blue-600 dark:bg-blue-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors shadow-lg hover:shadow-xl">
+          <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-500 transition-colors shadow-lg hover:shadow-xl">
             Contact Us Today
           </button>
         </div>
